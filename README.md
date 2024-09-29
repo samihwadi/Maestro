@@ -5,7 +5,6 @@
 **Maestro** is a web-based platform designed to connect dedicated tutors with eager learners, fostering academic growth and helping students excel in various subjects. The platform offers flexible learning options and personalized tutoring services to ensure both tutors and students have the best experience.
 
 ## Table of Contents
-
 - [About](#about)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -30,7 +29,6 @@ At **Maestro**, we provide private tutoring across a variety of subjects, includ
 ## Technologies Used
 
 This project was built using the following technologies:
-
 - React.js (with Vite as the build tool)
 - TypeScript
 - Sass (for styling)
