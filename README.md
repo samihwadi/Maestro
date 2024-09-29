@@ -29,6 +29,6 @@ At **Maestro**, we provide private tutoring across a variety of subjects, includ
 ## Technologies Used
 
 This project was built using the following technologies:
-  - React.js (with Vite as the build tool)
-  - TypeScript
-  - Sass (for styling)
+- React.js (with Vite as the build tool)
+- TypeScript
+- Sass (for styling)
