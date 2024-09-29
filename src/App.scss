@@ -1,3 +1,54 @@
-.App {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+$bgColor : #eaeae8;
+$footerColor: #282828;
+$accentColor: #ca9563;
+$subHeadingSize: 1.3em;
+
+@font-face {
+    font-family: 'Stratos Light';
+    src: url('./fonts/stratos-light-TRIAL-BF63c604a0abc54.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Stratos Bold';
+    src: url('./fonts/stratos-medium-TRIAL-BF63c604a121821.otf') format('opentype');
+}
+
+@mixin headerFont {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+@mixin headerBold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+@mixin textFont {
+    font-family: "Stratos Light";
+}
+
+@mixin textBold {
+    font-family: "Stratos Bold";
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.App {
+    background-color: $bgColor;
+    background-image: url('../public/images/Hero_Image.jpeg');
+    background-position: right 15%; 
+    height: 100vh; 
+    background-repeat: no-repeat;
+}   

@@ -1,0 +1,25 @@
+@import "../../App";
+
+.navbar-container {
+    @include textFont();
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+    a {
+        text-decoration: none;
+        color: $footerColor;
+    }
+}
+
+.navbar__links-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        padding-right: 15px;
+        font-size: $subHeadingSize;
+    }
+}
