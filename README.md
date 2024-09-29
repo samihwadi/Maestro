@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Maestro - Connecting Tutors with Learners
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Maestro Logo](./public/Hero_Image.jpeg)
 
-Currently, two official plugins are available:
+**Maestro** is a web-based platform designed to connect dedicated tutors with eager learners, fostering academic growth and helping students excel in various subjects. The platform offers flexible learning options and personalized tutoring services to ensure both tutors and students have the best experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+At **Maestro**, we provide private tutoring across a variety of subjects, including Mathematics, Physics, Biology, Chemistry, and more. Whether you're a tutor ready to make an impact or a student unlocking new possibilities, Maestro simplifies the process of connecting and ensuring reliable, transformative educational experiences. Learners can choose between in-person or online tutoring, based on their preference and convenience.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Tutor Matching**: Efficiently matches students with tutors based on their needs and preferences.
+- **Subject Variety**: Tutoring available in core subjects such as Mathematics, Physics, Biology, Chemistry, and more.
+- **Flexible Learning**: Students can choose between in-person and online tutoring formats.
+- **User-Friendly Interface**: Simple and intuitive design, making it easy for tutors and learners to navigate.
+- **Responsive Design**: Ensures seamless use across all devices, from desktops to mobile phones.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project was built using the following technologies:
+  - React.js (with Vite as the build tool)
+  - TypeScript
+  - Sass (for styling)
