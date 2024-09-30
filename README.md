@@ -1,6 +1,6 @@
 # Maestro - Connecting Tutors with Learners
 
-![Maestro Logo](./public/landing.jpg)
+![Maestro Logo](./public/Demo.png)
 
 **Maestro** is a web-based platform designed to connect dedicated tutors with eager learners, fostering academic growth and helping students excel in various subjects. The platform offers flexible learning options and personalized tutoring services to ensure both tutors and students have the best experience.
 
