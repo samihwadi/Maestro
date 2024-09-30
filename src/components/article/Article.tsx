@@ -1,4 +1,5 @@
 import './Article.scss'
+import { Link } from 'react-router-dom';
 
 const Article: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Article: React.FC = () => {
           <p className="accented">Maestro</p>
         </div>
         <p className='subheading__text'>In-Home & Online Tutoring</p>
-        <p className='cta'><a href="/services">Learn more</a></p>
+        <Link className='cta' to='/services'>Learn more</Link>
       </div>
     </div>
   )

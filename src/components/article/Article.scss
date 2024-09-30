@@ -1,4 +1,5 @@
 @import "../../App";
+@import "../../animations/Animations.scss";
 
 .article {
     width: 45%;
@@ -8,6 +9,8 @@
 }
 .article__container {
     @include textFont ();
+    opacity: 0;
+    animation: fadeInText 0.8s forwards;
 }
 
 .subheading__text{
@@ -28,6 +31,7 @@
 .cta {
     display: flex;
     align-items: center;
+    @include removeDecor();
     &::before {
         content: "";
         height: 2px;
@@ -35,5 +39,9 @@
         background-color: #282828;
         display: block;
         margin-right: 10px;
+    }
+    &:hover {
+        color: $accentColor;
+        cursor: pointer;
     }
 }
