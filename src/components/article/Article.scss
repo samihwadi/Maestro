@@ -1,0 +1,39 @@
+@import "../../App";
+
+.article {
+    width: 45%;
+    position: absolute;
+    left: 3%;
+    top: 55%;
+}
+.article__container {
+    @include textFont ();
+}
+
+.subheading__text{
+    font-size: $subHeadingSize;
+    margin-bottom: 5px;
+}
+.heading__container {
+    @include headerFont();
+    font-size: $headingSize;
+    letter-spacing: -1.5px;
+    margin-bottom: 30px;
+    .accented {
+        color: $accentColor;
+        @include headerBold();
+    }
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 50%;
+        background-color: #282828;
+        display: block;
+        margin-right: 10px;
+    }
+}

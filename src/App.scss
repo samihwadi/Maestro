@@ -3,6 +3,7 @@ $bgColor : #eaeae8;
 $footerColor: #282828;
 $accentColor: #ca9563;
 $subHeadingSize: 1.3em;
+$headingSize: 3em;
 
 @font-face {
     font-family: 'Stratos Light';
@@ -43,6 +44,8 @@ $subHeadingSize: 1.3em;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
+    color: $footerColor;
 }
 
 .App {

@@ -1,12 +1,14 @@
 import './App.scss'
 import Navbar from './components/navbar/Navbar'
-import landing from '../public/images/Hero_Image.jpeg'
+import Article from './components/article/Article'
 
-function App() {
+
+const App: React.FC = () => {
 
   return (
     <div className="App">
       <Navbar />
+      <Article />
     </div>
   )
 }

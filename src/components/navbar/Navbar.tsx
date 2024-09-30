@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import logo from "../../../public/images/logo.png";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="navbar-container">
       <img src={logo} alt="logo" />
