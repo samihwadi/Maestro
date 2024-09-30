@@ -1,10 +1,14 @@
 import './App.scss'
+import Navbar from './components/navbar/Navbar'
+import Article from './components/article/Article'
 
-function App() {
+
+const App: React.FC = () => {
 
   return (
     <div className="App">
-      Hello World!
+      <Navbar />
+      <Article />
     </div>
   )
 }
