@@ -1,0 +1,12 @@
+@import "../../App";
+@import "../../animations/Animations.scss";
+
+.homepage {
+    background-color: $bgColor;
+    background-image: url('../../../public/images/Hero_Image.jpeg');
+    background-position: right 15%; 
+    height: 100vh; 
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeInText 0.8s forwards;
+}
