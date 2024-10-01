@@ -1,0 +1,55 @@
+@import "../../App";
+
+.pic__services{
+    img {
+        opacity: 80%;
+    }
+}
+
+.services__container {
+    color: $footerColor;
+    background-color: $bgColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    h1 {
+        font-size: 2.2em;
+    }
+    h1, h3, button {
+        @include headerFont;
+        margin-bottom: 11px;
+    }
+    p {
+        @include textFont;
+        margin-bottom: 8px;
+        line-height: 25px;
+        strong {
+            @include textBold;
+        }
+    }
+    .body {
+        width: 45%;
+        height: 400px;
+        hr {
+            margin-bottom: 11px;
+        }
+        .section-one__container, .section-two__container, .section-three__container {
+            display: flex;
+            justify-content: space-between;
+            button {
+                width: 50px;
+                font-size: 25px;
+                border: none;
+                padding: 0;
+                background-color: $bgColor;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.expert-tutoring strong {
+    color: $accentColor;
+}
+
