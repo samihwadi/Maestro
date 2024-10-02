@@ -1,0 +1,36 @@
+@import "../../App";
+@import "../../animations/Animations";
+
+.about__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bgColor;
+    color: $footerColor;
+}
+
+.fixed {
+    @include headerFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    height: 100vh;
+    h1{
+        font-size: 2.3em;
+        line-height: 55px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    img {
+        width: 70%;
+        border: 1px solid $footerColor;
+    }
+}
+
+.scroll {
+    width: 35%;
+    margin-right: 30px;
+}
+
+

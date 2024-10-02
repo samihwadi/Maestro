@@ -1,0 +1,74 @@
+@import "../../App";
+
+.scrollable__container {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+
+    .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid $footerColor;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+    .scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: $footerColor;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+    }
+  
+    .section {
+        scroll-snap-align: start;
+        height: 100vh;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .scroll-downs {
+            align-self: end;
+            &.hide {
+                opacity: 0;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+        }
+        h1, .btn {
+            @include headerFont;
+        }
+        
+        p {
+            @include textFont;
+            font-size: 1.2em;
+            margin: 1rem 0;
+        }
+        .btn {
+            font-size: 0.6em;
+            margin-top: 20px;
+        }
+    }
+  }
+.accented {
+    strong {
+        color: $accentColor;
+    }
+}
+
+.accented, .bold {
+    strong {
+        @include textBold;
+    }
+}
