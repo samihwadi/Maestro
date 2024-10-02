@@ -20,6 +20,9 @@ $stripe-height: 7px;
     }
 }
 
+.registration__container a{
+    @include removeDecor;
+}
 .registration__btn {
     @include reset-button;
     display: flex;
@@ -34,10 +37,6 @@ $stripe-height: 7px;
     border-radius: 6px;
     margin-bottom: 16px;
     transition: all .5s ease;
-
-    a{
-        @include removeDecor;
-    }
     
     &--stripe {
         overflow: hidden;

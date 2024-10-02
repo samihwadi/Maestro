@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Button: React.FC = () => {
   return (
-    <div className="registration__btn registration__btn--stripe"> 
-        <Link to="./form">Book Lesson ⟶</Link>
+    <div className="registration__container"> 
+        <Link to="./form"><button className="registration__btn registration__btn--stripe">Book Lesson ⟶</button></Link>
     </div>
   )
 }

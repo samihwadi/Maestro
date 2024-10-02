@@ -6,6 +6,13 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     position: relative;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
 
     .mousey {
         width: 3px;
