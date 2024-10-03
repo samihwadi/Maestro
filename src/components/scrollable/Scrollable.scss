@@ -59,7 +59,7 @@
         
         p {
             @include textFont;
-            font-size: 1.2em;
+            font-size: $subHeadingSize;
             margin: 1rem 0;
             line-height: 30px;
         }

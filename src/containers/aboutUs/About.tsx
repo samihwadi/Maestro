@@ -5,7 +5,7 @@ const About: React.FC = () => {
     <div className="about__container">
         <div className="fixed">
             <h1>Find the perfect tutor, every time.</h1>
-            <img src="../../../public/images/About_us_hero.png" alt="Maestro-image-1" />
+            <img src="../../../public/images/About_us_hero.png" alt="Digital Illustration" />
         </div>
         <div className="scroll">
             <Scrollable />

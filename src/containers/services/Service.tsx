@@ -1,4 +1,4 @@
-import "./Service.scss"
+import "./Service.scss";
 import { useState } from 'react';
 import Button from "../../components/button/Button";
 const Service = () => {
@@ -56,11 +56,11 @@ const Service = () => {
             </div>
             <hr />
             <div className="btn">
-                <Button />
+                <Button text= {'Book lesson'} link={'/form'}/>
             </div>
         </div>
         <div className="pic__services">
-            <img src="../../../public/images/Services_pic.png" alt="Hero Image" />
+            <img src="../../../public/images/Services_pic.png" alt="Statue Silhouette Image" />
         </div>
     </div>
   )

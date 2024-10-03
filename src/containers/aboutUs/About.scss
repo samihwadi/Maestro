@@ -14,17 +14,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 550px;
+    margin-left: 60px;
+    width: 50%;
     height: 100vh;
     h1{
-        font-size: 2.3em;
-        line-height: 55px;
+        font-size: $headingSize;
+        line-height: 70px;
         width: 80%;
         margin-bottom: 20px;
     }
     img {
-        width: 70%;
+        width: 60%;
         border: 1px solid $footerColor;
+    }
+    h1, img {
+        margin-left: 40px;
     }
 }
 

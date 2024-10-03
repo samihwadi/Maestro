@@ -14,11 +14,14 @@
     justify-content: space-evenly;
     height: 100vh;
     h1 {
-        font-size: 2.4em;
+        font-size: $headingSize;
     }
     h1, h3, button {
         @include headerFont;
         margin-bottom: 11px;
+    }
+    h3, p {
+        font-size: $subHeadingSize;
     }
     p {
         @include textFont;
