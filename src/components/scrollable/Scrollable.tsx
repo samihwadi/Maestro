@@ -17,7 +17,7 @@ const Scrollable: React.FC = () => {
     { title: "", content: (<div className='cta__container'>
         <p className='bold'>Learning with Maestro is all about flexibility and convenience. Whether you prefer the <strong>in-person</strong> experience or the convenience of <strong>online</strong> learning, we’ve got you covered.</p> <br /> 
         <p className='bold'><strong>Choose the format that works best for you</strong>, and start your journey towards academic excellence today. 
-        <div className='btn'><Button text='Book lesson' link={'/form'}/></div>
+        <div className='btn'><Button text='Book lesson ⟶' link={'/form'}/></div>
         </p></div>) },
   ];
 

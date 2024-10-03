@@ -7,8 +7,7 @@
 }
 
 .services__container {
-    color: $footerColor;
-    background-color: $bgColor;
+    @include defaultColor;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

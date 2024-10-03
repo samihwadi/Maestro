@@ -56,7 +56,7 @@ const Service = () => {
             </div>
             <hr />
             <div className="btn">
-                <Button text= {'Book lesson'} link={'/form'}/>
+                <Button text= {'Book lesson ⟶'} link={'/form'}/>
             </div>
         </div>
         <div className="pic__services">

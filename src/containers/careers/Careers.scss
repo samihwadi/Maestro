@@ -1,0 +1,72 @@
+@import "../../App";
+
+.careers__container{
+    @include defaultColor;
+    h1 {
+        @include headerFont;
+        margin-bottom: 20px;
+        line-height: 70px;
+        font-size: $headingSize;
+    }
+    p, ul {
+        @include textFont;
+        font-size: $subHeadingSize;
+        line-height: 30px;
+        margin-bottom: 20px;
+        strong {
+            @include textBold;
+        }
+    }
+}
+
+.intro__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+    strong {
+        color: $accentColor;
+    }
+    .intro__pic {
+        width: 40%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .intro__text{
+        width: 35%;
+        margin-bottom: 30px;
+    }
+}
+
+.sections__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    ul {
+        padding-left: 20px; 
+        li {
+            margin-bottom: 10px;   
+        }
+    }
+    .spacing {
+        margin-bottom: 100px;
+    }
+    .section__one, .section__four {
+        width: 80%;
+    }
+    .section__two {
+        display: flex;
+        .section__two__img {
+            width: 55%;
+            img {
+                width: 100%;
+            }
+        }
+        .section__two__text {
+            width: 40%;
+        }
+    }
+}
