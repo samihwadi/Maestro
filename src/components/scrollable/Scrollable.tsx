@@ -16,9 +16,9 @@ const Scrollable: React.FC = () => {
     { title: "What we offer", content: (<p className="accented">We offer experienced tutoring across a variety of subjects, such as <strong>Mathematics</strong>, <strong>Physics</strong>, <strong>Biology</strong>, and <strong>Chemistry</strong>. Our tutors help students excel in both fundamental concepts and advanced topics, ensuring they are fully equipped for academic success.</p>) },
     { title: "", content: (<div className='cta__container'>
         <p className='bold'>Learning with Maestro is all about flexibility and convenience. Whether you prefer the <strong>in-person</strong> experience or the convenience of <strong>online</strong> learning, we’ve got you covered.</p> <br /> 
-        <p className='bold'><strong>Choose the format that works best for you</strong>, and start your journey towards academic excellence today. 
+        <p className='bold'><strong>Choose the format that works best for you</strong>, and start your journey towards academic excellence today. </p>
         <div className='btn'><Button text='Book lesson ⟶' link={'/form'}/></div>
-        </p></div>) },
+        </div>) },
   ];
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>): void => {

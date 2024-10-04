@@ -1,4 +1,5 @@
 import Button from "../../components/button/Button";
+import Form from "../form/Form";
 import "./Careers.scss";
 
 const Careers: React.FC = () => {
@@ -9,7 +10,7 @@ const Careers: React.FC = () => {
                 <img src="../../../public/images/Careers_hero.png" alt="Leonardo statue figure" />
             </div>
             <div className="intro__text">
-                <h1>Join Our Team at <strong>Maestro</strong></h1>
+                <h1>Join our team at <strong>Maestro</strong></h1>
                 <p>
                     At Maestro, we believe in unlocking potential—not just for students, but for our tutors too. 
                     If you're passionate about teaching and making a lasting impact on learners, we'd love to hear from you. 
@@ -20,7 +21,7 @@ const Careers: React.FC = () => {
         </div>  
         <div className="sections__container">
             <div className="section__one spacing">
-                <h1>Why Tutor at Maestro?</h1>
+                <h1>Why tutor at <strong>Maestro</strong>?</h1>
                 <p>At Maestro, you’re not just a tutor—you’re a mentor, a guide, and a partner in our students' journeys to success. Here’s why you’ll love working with us: </p>
                     <ul>
                         <li><strong>Flexibility</strong>: Choose your schedule and teach in a way that fits your lifestyle. Whether you prefer to tutor in-person or online, we offer both options.</li>
@@ -32,7 +33,7 @@ const Careers: React.FC = () => {
                     <img src="../../../public/images/Careers_1.png" alt="" />
                 </div>
                 <div className="section__two__text">
-                    <h1>What We're Looking For</h1>
+                    <h1>What we're looking for</h1>
                     <p>We are searching for tutors who:</p>
                     <ul>
                         <li>Are passionate about education and mentoring.</li>
@@ -53,13 +54,16 @@ const Careers: React.FC = () => {
                 </ul>
             </div>
             <div id="apply" className="section__four spacing">
-                <h1>Join Us in Shaping the Future</h1>
+                <h1>Join us in shaping the future</h1>
                 <p>
                     At Maestro, we’re not just offering jobs—we’re creating a community of educators who are passionate about making a difference. 
                     If you’re ready to inspire, grow, and help students unlock their potential, we’d love to have you on board. 
                     Apply today and become part of the Maestro family!
                 </p>
             </div>
+        </div>
+        <div className="form spacing">
+            {/* <Form /> */}
         </div>
     </div>
   )

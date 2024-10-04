@@ -27,6 +27,21 @@
         form{
             display: flex;
             flex-direction: column;
+            .inputs__container {
+                display: flex;
+                flex-direction: column;
+                span{
+                    @include textFont;
+                    font-size: 12px;
+                    padding: 3px;
+                    color: red;
+                }
+                input.invalid {
+                    border: 1px solid red;
+                }
+                
+                       
+            }
             .submission__btn {
                 @include reset-button;
                 margin: 40px 0 16px;
