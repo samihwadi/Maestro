@@ -1,0 +1,121 @@
+@import '../../App';
+@import '../button/Button';
+
+.formInput{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    .studentForm__container {
+        width: 55%;
+        margin-left: 50px;
+        position: relative; 
+        z-index: 1; 
+        .text__container {
+            margin-bottom: 40px;
+            h1 {
+                @include headerFont;
+                font-size: $headingSize;
+                padding: 70px 0 20px;
+            }
+            p {
+                font-size: $subHeadingSize;
+            }
+        }
+        p, label {
+            @include textFont;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            .submission__btn {
+                @include reset-button;
+                margin: 40px 0 16px;
+                padding: 20px;
+                @include headerFont;
+                font-size: 1.1em;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 16px 36px 22px;
+                width: 100%;
+                background-color: #d9d9d9;
+                color: $footerColor;
+                border: 2px solid $footerColor;
+                border-radius: 6px;
+                transition: all .5s ease;
+                
+                &--stripe {
+                    overflow: hidden;
+                    position: relative;
+                    
+                    &:after {
+                        content: '';
+                        display: block;
+                        height: $stripe-height;
+                        width: 100%;
+                        background-image: repeating-linear-gradient(
+                            45deg,
+                            $footerColor,
+                            $footerColor 1px,
+                            transparent 2px,
+                            transparent 5px
+                        );
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        border-top: 1px solid $footerColor;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background-size: $stripe-height $stripe-height;
+                    }
+            
+                    &:hover {
+                        background-color: $footerColor;
+                        color: $bgColor;
+                        border-color: #191919;
+            
+                        &:after {
+                            background-image: repeating-linear-gradient(
+                                45deg,
+                                $bgColor,
+                                $bgColor 1px,
+                                transparent 2px,
+                                transparent 5px
+                            );
+                            border-top: 1px solid $footerColor;
+                            animation: stripe-slide 12s infinite linear forwards;
+                        }
+                    }
+                }
+            }
+            label {
+                margin: 35px 0 5px;
+            }
+        }
+        select, input {
+            background-color: #d9d9d9;
+            border: none;
+            border-bottom: solid 1px #a1a1a1;
+            height: 30px;
+            @include textBold;
+            font-size: 1em;
+            &::placeholder {
+                font-size: 0.8em;
+                color: #a1a1a1;
+            }
+        }
+    }
+    .form__image{
+        position: absolute; 
+        right: -42%;
+        bottom: -10%;
+        width: 100%;
+        z-index: 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
