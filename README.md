@@ -27,3 +27,4 @@ This project was built using the following technologies:
 - React.js (with Vite as the build tool)
 - TypeScript
 - Sass (for styling)
+- Firebase

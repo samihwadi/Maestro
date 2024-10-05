@@ -14,7 +14,7 @@ const Careers: React.FC = () => {
                 <p>
                     At Maestro, we believe in unlocking potential—not just for students, but for our tutors too. 
                     If you're passionate about teaching and making a lasting impact on learners, we'd love to hear from you. 
-                    We're looking for dedicated educators who are ready to inspire and guide students toward their goals. Join a team that values growth, collaboration, and the transformative power of education.
+                    We're looking for dedicated educators who are ready to inspire and guide students, ranging from <strong>Grade 9</strong> to <strong>Grade 12</strong>, toward their goals. Join a team that values growth, collaboration, and the transformative power of education.
                 </p>
                 <Button text='Apply ↓' link={'#apply'}/>
             </div>
@@ -63,7 +63,7 @@ const Careers: React.FC = () => {
             </div>
         </div>
         <div className="form spacing">
-            {/* <Form /> */}
+            <Form link='/careers'/>
         </div>
     </div>
   )

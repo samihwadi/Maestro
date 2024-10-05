@@ -1,9 +1,13 @@
 @import '../../App';
 
-.form__container{
+.student__form{
     background: linear-gradient(
         to right,
-        #d9d9d9 75%,
-        #eaeae9 25% 100% 
+        $bgDark 75%,
+        $bgColor 25% 100% 
     );
+}
+
+.career__form{
+    background-color: $bgDark;
 }

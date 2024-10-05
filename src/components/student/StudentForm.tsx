@@ -49,7 +49,6 @@ const StudentForm: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log('Submitting form...');
         emailjs.sendForm(
             import.meta.env.VITE_EMAILJS_SERVICE_ID, 
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
@@ -214,9 +213,9 @@ const StudentForm: React.FC = () => {
                                     className={errors[inputs.name] && focused[inputs.name] ? "invalid" : ""}
                                     required={inputs.required}
                                 />
-                            {errors[inputs.name] && focused[inputs.name] && (
-                            <span className="error-message">{errors[inputs.name]}</span>
-                            )}
+                                {errors[inputs.name] && focused[inputs.name] && (
+                                <span className="error-message">{errors[inputs.name]}</span>
+                                )}
                             </div>
                     ))}
                     <label>Preferred mode of service</label>
