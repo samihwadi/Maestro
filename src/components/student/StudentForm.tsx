@@ -1,5 +1,6 @@
 import './StudentForm.scss';
-import { useState, ChangeEvent, FocusEvent } from 'react';
+import { useRef, useState, ChangeEvent, FocusEvent, FormEvent } from 'react';
+import emailjs from '@emailjs/browser';
 
 interface InputField {
     id: number;
@@ -45,6 +46,38 @@ const StudentForm: React.FC = () => {
     const [focused, setFocused] = useState<{ [key: string]: boolean }>({});
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
+    const form = useRef<HTMLFormElement>(null);
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log('Submitting form...');
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
+            form.current!, 
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    form.current!.reset();  // Reset the form DOM elements
+                    setValues({
+                        studentFirstName: "",
+                        studentLastName: "",
+                        email: "",
+                        guardianName: "",
+                        phone: "",
+                        grade: "",
+                        subject: "",
+                        days: "",
+                        method: "",
+                    }); 
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     const handleBlur = (e: FocusEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name } = e.target;
         setFocused({ ...focused, [name]: true });
@@ -88,7 +121,6 @@ const StudentForm: React.FC = () => {
         const { name, value } = e.target;
         setValues({ ...studentValues, [name]: value });
 
-        // If the user is typing, we validate in real-time
         if (focused[name]) {
             validateField(name);
         }
@@ -168,7 +200,7 @@ const StudentForm: React.FC = () => {
                         needs, helping you achieve your academic goals with ease.
                     </p>
                 </div>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     {studentInputs.map((inputs) => (
                             <div key={inputs.id} className='inputs__container'> 
                                 <label>{inputs.label}</label>
