@@ -4,7 +4,7 @@
 .navbar-container {
     @include textFont();
     display: flex;
-    background-color: $footerColor;
+    background-color: transparent;
     justify-content: space-between;
     height: 70px;
 
@@ -25,7 +25,7 @@
         font-size: 1em;
         margin-right: 25px;
         text-decoration: none;
-        color: $bgColor;
+        color: $footerColor;
         transition: color 0.15s ease-in-out;
 
         &:hover,

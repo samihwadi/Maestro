@@ -67,4 +67,15 @@ $headingSize: 3em;
     scroll-behavior: smooth;
 }
 
+.App {
+    position: relative;
+    .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 5;
+    }
+}
+
 
