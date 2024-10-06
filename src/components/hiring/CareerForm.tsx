@@ -88,6 +88,7 @@ const CareerForm: React.FC = () => {
             );
 
             console.log('SUCCESS!');
+            alert("Application submitted successfully!");
             form.current!.reset();
             setValues({
                 firstName: "",
@@ -241,7 +242,7 @@ const CareerForm: React.FC = () => {
     ];
 
     return (
-        <div className="container">
+        <div className="careers__form__container">
             <form ref={form} onSubmit={sendEmail}>
                 {careerInputs.map((inputs) => (
                     <div key={inputs.id} className="inputs__container">

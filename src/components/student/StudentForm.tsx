@@ -58,6 +58,7 @@ const StudentForm: React.FC = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    alert("Form submitted successfully!");
                     form.current!.reset();  // Reset the form DOM elements
                     setValues({
                         studentFirstName: "",
@@ -253,7 +254,6 @@ const StudentForm: React.FC = () => {
                                 </option>
                             ))}
                     </select>
-
                     <button className="submission__btn submission__btn--stripe">Submit</button>
                 </form>
             </div>

@@ -6,6 +6,7 @@ import Service from './containers/services/Service'
 import About from './containers/aboutUs/About'
 import Careers from './containers/careers/Careers'
 import Form from './containers/form/Form'
+import Footer from './containers/footer/Footer'
 
 const App: React.FC = () => {
 
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path='/careers' element={<Careers />}></Route>
           <Route path='/form' element={<Form link={'/form'}/>}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   )
