@@ -19,9 +19,9 @@ const Footer: React.FC = () => {
                     <h2>For learners who want results, fast.</h2>
                 </div>
                 <div className="socials">
-                    <Link to=''><FaInstagram /></Link>
-                    <Link to=''><FaFacebook /></Link>
-                    <Link to=''><FaLinkedin /></Link>
+                    <a href='https://www.instagram.com/official_thisismaestro/' target='blank'><FaInstagram /></a>
+                    <a href='https://www.facebook.com/profile.php?id=61567133600300' target='blank'><FaFacebook /></a>
+                    <a href='https://www.linkedin.com/company/this-is-maestro/about/'><FaLinkedin target='blank'/></a>
                 </div>
             </div>
             <div className="section__two">
