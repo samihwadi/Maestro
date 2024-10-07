@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Button from '../button/Button';
 import './Scrollable.scss';
+import useResize from '../../useResize';
 
 interface Section {
   title: string;
@@ -9,7 +10,7 @@ interface Section {
 
 const Scrollable: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 770); // Detect initial screen size
+  const isTablet = useResize(770);
 
   const sections: Section[] = [
     { title: "What is ‘Maestro,’ you ask?", content: (<p>At Maestro, we provide private tutoring to connect dedicated tutors with eager learners, fostering growth and building futures.</p>) },
@@ -31,24 +32,10 @@ const Scrollable: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    // Add event listener to track window resizing
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 770);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup the event listener when component unmounts
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   // Conditionally render all sections or scrollable based on screen size
   return (
     <>
-      {isMobile ? (
+      {isTablet ? (
         <div className="scrollable__container">
           {sections.map((section, index) => (
             <div key={index} className="section">

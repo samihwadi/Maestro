@@ -55,4 +55,18 @@
     }
 }
 
+@media (max-width: 425px) {
+    .about__container .fixed {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 2.2em;
+            line-height: normal;
+            text-align: left;
+            width: 100%;
+        }
+    }
+}
+
 

@@ -98,3 +98,27 @@
 
 }
 
+@media (max-width: 425px) {
+    .services__container{
+        height: auto;
+        .body {
+            width: 90%;
+            h1 {
+                font-size: 1.8em;
+            }
+            h3, p {
+                font-size: 1.1em;
+            }
+            .btn {
+                font-size: 0.6em;
+            }
+        } 
+        .pic__services {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            align-self: flex-start; 
+        } 
+
+    } 
+}
+

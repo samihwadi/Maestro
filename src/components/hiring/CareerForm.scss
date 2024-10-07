@@ -2,7 +2,7 @@
 @import '../button/Button';
 
 .careers__form__container {
-    width: 70vw;
+    width: 80%;
     margin-left: 100px;
     label {
         @include textFont;
@@ -103,6 +103,16 @@
         }
         label {
             margin: 35px 0 5px;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .careers__form__container {
+        margin: 10% 10% 0;
+        form .submission__btn {
+            font-size: 0.8em;
+            width: 100%;
         }
     }
 }

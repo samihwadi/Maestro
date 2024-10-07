@@ -17,3 +17,9 @@
         background: $bgDark;
     }
 }
+
+@media (max-width:425px) {
+    .career__form{
+        width: 100%;
+    }
+}

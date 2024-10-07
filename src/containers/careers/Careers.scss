@@ -69,7 +69,6 @@
 }
 
 .form {
-    display: flex;
     width: 100%;
     background-color: $bgDark;
 }
@@ -98,6 +97,46 @@
             align-items: center;
             .section__two__img, .section__two__text {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .careers__container {
+        h1 {
+            line-height: 50px;
+        }
+        .intro__container {
+            height: auto;
+            .intro__text {
+                h1 {
+                    font-size: 2.4em;
+                }
+                p {
+                    font-size: 1.1em;
+                    text-align: justify;
+                }
+            }
+            .intro__pic {
+                width: 60%;
+            }
+        }
+        .sections__container {
+            margin: 10%;
+            h1 {
+                font-size: 2.4em;
+            }
+            p, ul {
+                font-size: 1.1em;
+            }
+            .section__one, .section__two, .section__three {
+                ul {
+                    text-align: left;
+                }
+            }
+            .section__four p{
+                text-align: left;
             }
         }
     }

@@ -7,14 +7,16 @@ import About from './containers/aboutUs/About'
 import Careers from './containers/careers/Careers'
 import Form from './containers/form/Form'
 import Footer from './containers/footer/Footer'
+import useResize from './useResize'
+import NavMobile from './components/navbar/NavMobile'
 
 const App: React.FC = () => {
-
+  const isMobile = useResize(425);
   return (
     <div className="App">
       <Router>
         <div className="navigation">
-          <Navbar />
+          {isMobile ? <NavMobile /> : <Navbar />}
         </div>
         <Routes>
           <Route path='/' element={<Homepage />}></Route>

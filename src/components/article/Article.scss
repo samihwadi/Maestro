@@ -88,3 +88,10 @@
         font-size: 1em;
     }
 }
+
+@media (max-width: 425px) {
+    .article .article__container .cta {
+        width: 80%;
+        padding-left: 40px;
+    }
+}
