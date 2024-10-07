@@ -11,3 +11,9 @@
 .career__form{
     background-color: $bgDark;
 }
+
+@media (max-width:770px) {
+    .student__form{
+        background: $bgDark;
+    }
+}

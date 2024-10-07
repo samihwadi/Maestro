@@ -134,3 +134,19 @@
         }
     }
 }
+
+@media (max-width: 770px) {
+    .formInput {
+        .form__image {
+            display: none;
+        }
+        .studentForm__container {
+            width: 80%;
+            margin: 10%;
+            .text__container {
+                text-align: center;
+            }
+
+        }
+    }
+}

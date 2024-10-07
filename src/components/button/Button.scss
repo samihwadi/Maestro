@@ -82,3 +82,9 @@ $stripe-height: 7px;
         }
     }
 }
+
+@media (max-width: 960px) {
+    .registration__btn {
+        width: 100%;
+    }
+}

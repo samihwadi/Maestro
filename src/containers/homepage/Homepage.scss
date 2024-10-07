@@ -3,10 +3,26 @@
 
 .homepage {
     background-color: $bgColor;
-    background-image: url('../../../public/images/Hero_Image.jpeg');
+    background-image: url('../../../images/Hero_Image.jpeg');
     background-position: right 15%; 
     height: 100vh; 
     background-repeat: no-repeat;
     opacity: 0;
     animation: fadeInText 0.8s forwards;
+}
+
+@media (max-width: 960px) {
+    .homepage {
+        background-image: url('../../../images/Landing_mobile_hero.png');
+        background-position: center 15%;
+        background-size: 60%;
+
+    }
+}
+
+@media (max-width: 650px) {
+    .homepage {
+        background-position: center 30%;
+        background-size: 50%;
+    }
 }

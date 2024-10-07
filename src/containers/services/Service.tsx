@@ -60,7 +60,7 @@ const Service = () => {
             </div>
         </div>
         <div className="pic__services">
-            <img src="../../../public/images/Services_pic.png" alt="Statue Silhouette Image" />
+            <img src="../../../images/Services_pic.png" alt="Statue Silhouette Image" />
         </div>
     </div>
   )

@@ -258,7 +258,7 @@ const StudentForm: React.FC = () => {
                 </form>
             </div>
             <div className="form__image">
-                <img src="../../../public/images/Registration_pic.png" alt="Sketch of two men walking" />
+                <img src="../../../images/Registration_pic.png" alt="Sketch of two men walking" />
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import './Footer.scss';
-import logo from "../../../public/images/logo.png";
+import logo from "../../../src/logo.png";
 import { Link } from 'react-router-dom'; 
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaPhone } from "react-icons/fa6";
@@ -24,27 +24,29 @@ const Footer: React.FC = () => {
                     <a href='https://www.linkedin.com/company/this-is-maestro/about/'><FaLinkedin target='blank'/></a>
                 </div>
             </div>
-            <div className="section__two">
-                <h2>Contact us:</h2>
-                <div className="contacts">
-                    <div className="email">
-                        <IoIosMail />
-                        <Link to="mailto:inquiry@tutorsatmaestro.com?subject=Inquiry&body=Hello, I would like to know more about your services.">inquiry@thisismaestro.com</Link>
-                    </div>
-                    <div className="phone__primary">
-                        <FaPhone />
-                        <Link to="tel:+14379893556">1-(437) 989-3556</Link>
-                    </div>
-                    <div className="phone__secondary">
-                        <FaPhone />
-                        <Link to="tel:+16479787099">1-(647) 978-7099</Link>
+            <div className="section__divider">
+                <div className="section__two">
+                    <h2>Contact us:</h2>
+                    <div className="contacts">
+                        <div className="email">
+                            <IoIosMail />
+                            <Link to="mailto:inquiry@tutorsatmaestro.com?subject=Inquiry&body=Hello, I would like to know more about your services.">inquiry@thisismaestro.com</Link>
+                        </div>
+                        <div className="phone__primary">
+                            <FaPhone />
+                            <Link to="tel:+14379893556">1-(437) 989-3556</Link>
+                        </div>
+                        <div className="phone__secondary">
+                            <FaPhone />
+                            <Link to="tel:+16479787099">1-(647) 978-7099</Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="section__three">
-                <Link to='/about-us'>About us</Link>
-                <Link to='/services'>Services</Link>
-                <Link to='/careers'>Careers</Link>
+                <div className="section__three">
+                    <Link to='/about-us'>About us</Link>
+                    <Link to='/services'>Services</Link>
+                    <Link to='/careers'>Careers</Link>
+                </div>
             </div>
         </div>
         <div className="license">

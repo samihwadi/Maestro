@@ -11,7 +11,6 @@
     }
 
     scrollbar-width: none;
-
     -ms-overflow-style: none;
 
     .mousey {
@@ -53,6 +52,7 @@
         &.active {
             opacity: 1;
         }
+
         h1, .btn {
             @include headerFont;
         }
@@ -63,12 +63,14 @@
             margin: 1rem 0;
             line-height: 30px;
         }
+
         .btn {
             font-size: 0.6em;
             margin-top: 20px;
         }
     }
-  }
+}
+
 .accented {
     strong {
         color: $accentColor;
@@ -78,5 +80,28 @@
 .accented, .bold {
     strong {
         @include textBold;
+    }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 770px) {
+    .scrollable__container {
+        height: auto; 
+        overflow-y: visible;  
+        scroll-snap-type: none;  
+        padding-bottom: 50px;  
+        .section {
+            height: auto; 
+            opacity: 1;     
+            transition: none;       
+            margin: 15% 0;    
+            text-align: justify;
+            h1 {
+                text-align: center;
+            }   
+        }
+    }
+    .scroll-downs {
+        display: none;  
     }
 }

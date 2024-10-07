@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import logo from "../../../public/images/logo.png";
+import logo from "../../../src/logo.png";
 import { NavLink } from 'react-router-dom'; 
 
 const Navbar: React.FC = () => {

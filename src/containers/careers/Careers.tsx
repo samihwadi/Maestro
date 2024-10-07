@@ -7,7 +7,7 @@ const Careers: React.FC = () => {
     <div className="careers__container">
         <div className="intro__container">
             <div className="intro__pic">
-                <img src="../../../public/images/Careers_hero.png" alt="Leonardo statue figure" />
+                <img src="../../../images/Careers_hero.png" alt="Leonardo statue figure" />
             </div>
             <div className="intro__text">
                 <h1>Join our team at <strong>Maestro</strong></h1>
@@ -30,7 +30,7 @@ const Careers: React.FC = () => {
             </div>
             <div className="section__two spacing">
                 <div className="section__two__img">
-                    <img src="../../../public/images/Careers_1.png" alt="" />
+                    <img src="../../../images/Careers_1.png" alt="" />
                 </div>
                 <div className="section__two__text">
                     <h1>What we're looking for</h1>

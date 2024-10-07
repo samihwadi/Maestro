@@ -3,8 +3,9 @@
 
 .about__container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10% 10%;
     @include defaultColor;
 }
 
@@ -12,7 +13,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
     width: 50%;
     height: 100vh;
     h1{
@@ -33,7 +33,26 @@
 
 .scroll {
     width: 35%;
-    margin-right: 30px;
+}
+
+@media (max-width: 770px) {
+    .about__container {
+        flex-direction: column;
+        text-align: center;
+        .fixed {
+            flex-direction: column-reverse;
+            padding-top: 20%;
+            width: 90%;
+            height: 80%;
+            align-items: center;
+            h1, img {
+                margin: 0 0 10%;
+            }
+        }
+        .scroll {
+            width: 90%;
+        }
+    }
 }
 
 

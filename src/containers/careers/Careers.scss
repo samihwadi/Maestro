@@ -44,7 +44,7 @@
 .sections__container {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin: 0 100px;
     ul {
         padding-left: 20px; 
         li {
@@ -53,9 +53,6 @@
     }
     .spacing {
         margin-bottom: 100px;
-    }
-    .section__one, .section__four {
-        width: 80%;
     }
     .section__two {
         display: flex;
@@ -75,4 +72,33 @@
     display: flex;
     width: 100%;
     background-color: $bgDark;
+}
+
+@media (max-width: 770px) {
+    .careers__container{
+        .intro__container, .sections__container {
+            text-align: center;
+        }
+        .intro__container {
+            padding-top: 20%;
+            flex-direction: column;
+            margin-bottom: 30%;
+            .intro__text {
+                height: auto;
+                width: 80%;
+            }
+        }
+        .section__one, .section__two, .section__three {
+            ul {
+                text-align: justify;
+            }
+        }
+        .section__two {
+            flex-direction: column;
+            align-items: center;
+            .section__two__img, .section__two__text {
+                width: 100%;
+            }
+        }
+    }
 }
